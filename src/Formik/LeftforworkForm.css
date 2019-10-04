@@ -1,0 +1,25 @@
+.logo {
+  width: 15vw;
+  filter: invert(10%) sepia(89%) saturate(4374%) hue-rotate(233deg)
+    brightness(97%) contrast(81%);
+}
+
+.form-container {
+  box-shadow: 0em 0em 2em #2538a6;
+  -webkit-box-shadow: 0em 0em 2em #2538a6;
+  -moz-box-shadow: 0em 0em 2em #2538a6;
+  border-radius: 1em;
+  max-width: 60vw;
+}
+
+@media screen and (max-width: 640px) {
+  .form-container {
+    max-width: 95vw;
+    box-shadow: 0em 0em 2em #2538a6;
+    -webkit-box-shadow: 0em 0em 2em #2538a6;
+    -moz-box-shadow: 0em 0em 2em #2538a6;
+  }
+  .logo {
+    width: 30vw;
+  }
+}

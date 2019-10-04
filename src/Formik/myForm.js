@@ -39,29 +39,29 @@ export const validate = yup.object().shape({
   gender: yup
     .string()
     .oneOf(["Mr", "Mme"])
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   firstName: yup
     .string()
     .min(6, "Trop court")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   lastName: yup
     .string()
     .min(6, "Trop court")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   email: yup
     .string()
     .email("email invalide")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   entreprise: yup
     .string()
     .min(3, "Trop court")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   tel: yup.string().matches(phoneRegExp, "Numéro de téléphone invalide"),
   addressLine1: yup
     .string()
     .min(4, "Trop court")
     .max(80, "Trop long")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   addressLine2: yup
     .string()
     .min(4, "Trop court")
@@ -69,17 +69,17 @@ export const validate = yup.object().shape({
   postalCode: yup
     .string()
     .matches(postalCodeRegExp, "Le code postal est incorrect")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   city: yup
     .string()
     .min(2, "Trop court")
     .max(50, "Trop long")
-    .required("Requis"),
+    .required("Merci de préciser ce champs"),
   country: yup
     .string()
     .min(5, "Trop court")
     .max(10, "Trop long")
-    .required("Requis")
+    .required("Merci de préciser ce champs")
 });
 
 // Initial Formik values

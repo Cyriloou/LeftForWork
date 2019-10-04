@@ -1,8 +1,21 @@
 import React, { Component } from "react";
 import "./App.css";
 import LeftforworkForm from "./Formik/LeftforworkForm";
-import { Container } from "@material-ui/core";
 import Parse from "parse";
+import { scroller } from "react-scroll";
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+
+// use default theme
+// const theme = createMuiTheme();
+
+// Or Create your Own theme:
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: "#2538a6"
+    }
+  }
+});
 
 export class App extends Component {
   constructor(props) {
@@ -17,12 +30,21 @@ export class App extends Component {
       "Kd8GvZVXq5ScD6ZLxPVNucDgU4QL9LPUV0klIi1Z"
     );
   }
+
+  componentDidMount() {
+    scroller.scrollTo("Logo", {
+      duration: 800,
+      delay: 80,
+      smooth: true
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <Container maxWidth="sm">
+        <MuiThemeProvider theme={theme}>
           <LeftforworkForm />
-        </Container>
+        </MuiThemeProvider>
       </div>
     );
   }

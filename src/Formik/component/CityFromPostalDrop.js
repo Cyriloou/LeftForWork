@@ -48,7 +48,7 @@ const CityFromPostalDrop = ({ postalCode, ...props }) => {
     <Field
       name={props.name}
       render={({ field /* _form */ }) => (
-        <FormControl fullWidth className={classes.margin}>
+        <FormControl {...props} fullWidth className={classes.margin}>
           <InputLabel htmlFor={props.name}>{props.label}</InputLabel>
           {state.menuItems.length ? (
             <Select

@@ -16,7 +16,7 @@ const DropDown = props => {
   return (
     <Field name={props.name}>
       {({ field /*, form*/ }) => (
-        <FormControl fullWidth className={classes.margin}>
+        <FormControl {...props} fullWidth className={classes.margin}>
           <InputLabel htmlFor={props.name}>{props.label}</InputLabel>
           <Select {...field} {...props}>
             {props.list.map((value, key) => (
