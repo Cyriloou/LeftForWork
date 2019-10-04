@@ -57,10 +57,11 @@ const LeftforworkForm = () => {
           <div className="mx-auto my-2 text-center">
             <Element name="Logo" />
             <img
-              className="logo mx-auto my-2"
+              className="form-logo mx-auto my-2"
               alt="logo"
               src="https://s3-us-west-2.amazonaws.com/userdata123/www/htmlblocks-images/2260/2260472/2260472_5003361_5d6686334b445.png"
             />
+            <h1 className="form-title">Formulaire</h1>
           </div>
           <div className="mx-auto my-2 text-left">
             <p>Bienvenue chez Left for Work !</p>
@@ -98,6 +99,7 @@ const LeftforworkForm = () => {
                         placeholder="Mme/Mr"
                         list={myForm.genderList}
                         required
+                        autoFocus
                       />
                     </Grid>
                     <Grid item xs={12} sm={5} className="py-0">

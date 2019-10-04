@@ -39,7 +39,7 @@ export const validate = yup.object().shape({
   gender: yup
     .string()
     .oneOf(["Mr", "Mme"])
-    .required("Merci de préciser ce champs"),
+    .required("Requis"),
   firstName: yup
     .string()
     .min(6, "Trop court")
