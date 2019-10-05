@@ -200,7 +200,7 @@ const LeftforworkForm = () => {
                         required
                       />
                     </Grid>
-                    <Grid item xs={12} className="py-0">
+                    <Grid item xs={12} sm={4} className="py-0">
                       <TextInput
                         name="postalCode"
                         label="Code Postal"
@@ -210,7 +210,7 @@ const LeftforworkForm = () => {
                         required
                       />
                     </Grid>
-                    <Grid item xs={12} className="py-0">
+                    <Grid item xs={12} sm={8} className="py-0">
                       <CityFromPostalDrop
                         name="city"
                         label="Ville"
