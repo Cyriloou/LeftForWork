@@ -92,7 +92,7 @@ const LeftforworkForm = () => {
                       <Element name="Contact" />
                       <h2>Contact</h2>
                     </Grid>
-                    <Grid item xs={12} sm={2} className="py-0">
+                    <Grid item xs={12} sm={3} md={2} className="py-0">
                       <DropDown
                         name="gender"
                         label="Mme/Mr"
@@ -102,7 +102,7 @@ const LeftforworkForm = () => {
                         autoFocus
                       />
                     </Grid>
-                    <Grid item xs={12} sm={5} className="py-0">
+                    <Grid item xs={12} sm={4} md={5} className="py-0">
                       <TextInput
                         name="firstName"
                         label="Prénom"
@@ -112,7 +112,7 @@ const LeftforworkForm = () => {
                         required
                       />
                     </Grid>
-                    <Grid item xs={12} sm={5} className="py-0">
+                    <Grid item xs={12} sm={5} md={5} className="py-0">
                       <TextInput
                         name="lastName"
                         label="Nom"
