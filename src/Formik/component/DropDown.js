@@ -28,7 +28,7 @@ const DropDown = props => {
           <ErrorMessage
             name={field.name}
             component="div"
-            className="text-danger alert-dismissible fade show"
+            className="form-alert-text text-danger alert-dismissible fade show"
           />
         </FormControl>
       )}
